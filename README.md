@@ -1,4 +1,4 @@
-### Hi , I'm [Payne!](https://blog.yuanpei.me) 👋
+### Hi , I'm [Payne!](https://blog.yuanpei.me) <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">
 
 A developer from China.
 
