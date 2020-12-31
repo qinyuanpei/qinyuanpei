@@ -2,10 +2,10 @@
 
 A developer from China.
 
-- 🔭 
-- 🌱 
-- 👯 
-- 💬 
+- 🔭 I’m currently working on Xi'an, China
+- 🌱 I’m currently learning  MicroService, Architecture, Data Analyse, .NET Core, Python .etc.
+- 👯 How to share ideas and thoughts with: https://blog.yuanpei.me
+- 💬 How to contact with: qinyuanpei@13.com
 
 **Languages & Tools:**  
 C#、Python、JavaScript
@@ -15,8 +15,8 @@ C#、Python、JavaScript
 ![Payne's Github Stats](https://github-readme-stats.vercel.app/api?username=qinyuanpei&show_icons=true)
 
 📕 **Recent Posts:**
-* 2020-07-31 - [利用MySQL的Binlog实现数据同步与订阅(下)](https://qinyuanpei.github.io//posts/3424138425/)
-* 2020-07-15 - [利用MySQL的Binlog实现数据同步与订阅(中)](https://qinyuanpei.github.io//posts/580694660/)
-* 2020-07-07 - [利用MySQL的Binlog实现数据同步与订阅(上)](https://qinyuanpei.github.io//posts/1333693167/)
-* 2020-06-23 - [记一次从已损坏的Git仓库中找回代码的经历](https://qinyuanpei.github.io//posts/686567367/)
-* 2020-06-20 - [.NET Core原生DI扩展之属性注入实现](https://qinyuanpei.github.io//posts/1658310834/)
+* 2020-12-25 - [视频是不能P的系列：OpenCV人脸检测](https://blog.yuanpei.me//posts/2997581895/)
+* 2020-12-15 - [作为技术宅的我，是这样追鬼滅の刃的](https://blog.yuanpei.me//posts/3602353334/)
+* 2020-12-08 - [使用Python抽取《半泽直树》原著小说人物关系](https://blog.yuanpei.me//posts/1427872047/)
+* 2020-12-05 - [厉害了！打工人用Python分析西安市职位信息](https://blog.yuanpei.me//posts/2147036181/)
+* 2020-11-18 - [一个西漂打工人的求职心路](https://blog.yuanpei.me//posts/1809438689/)
