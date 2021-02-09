@@ -15,6 +15,8 @@ C#、Python、JavaScript
 ![Payne's Github Stats](https://github-readme-stats.vercel.app/api?username=qinyuanpei&show_icons=true)
 
 📕 **Recent Posts:**
+* 2021-02-09 - [记一次失败的 ThoughtWorks 面试经历](https://blog.yuanpei.me/posts/2837181325/)
+* 2021-02-01 - [从 C# 1.0 到 C# 9.0，历代 C# 语言特性一览](https://blog.yuanpei.me/posts/3918433482/)
 * 2021-01-24 - [通过Python分析2020年全年微博热搜数据](https://blog.yuanpei.me/posts/2758545080/)
 * 2021-01-19 - [基于 Python 和 Selenium 实现 CSDN 一键三连自动化](https://blog.yuanpei.me/posts/3148958651/)
 * 2021-01-14 - [使用多线程为你的Python爬虫提速的N种姿势，你会几种？](https://blog.yuanpei.me/posts/3247093203/)
