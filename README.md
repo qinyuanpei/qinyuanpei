@@ -8,7 +8,9 @@ Hi, I'm Payne, a passionate self-taught developer from Xian, China.
 - 👯 How to share thoughts : https://blog.yuanpei.me
 
 ## My Tech Stack
-
+![Git](https://img.shields.io/badge/-Git-%23F05032?style=flat-square&logo=git&logoColor=%23ffffff)
+![Python](http://img.shields.io/badge/-Python-3C78A9?style=flat-square&logo=python&logoColor=ffffff)
+![Python](http://img.shields.io/badge/-Python-3C78A9?style=flat-square&logo=python&logoColor=ffffff)
 
 **Languages & Tools:**  
 C#、Python、JavaScript
