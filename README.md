@@ -10,6 +10,7 @@ Hi, I'm Payne, a passionate self-taught developer from Xian, China.
 ## My Tech Stack
 ![Git](https://img.shields.io/badge/-Git-%23F05032?style=flat-square&logo=git&logoColor=%23ffffff)
 ![.NET](https://img.shields.io/badge/-.NET-0080C3?style=flat-square&logo=microsoft&logoColor=ffffff)
+![Docker](https://img.shields.io/badge/-Docker-%231572B6?style=flat-square&logo=docker)
 ![Python](http://img.shields.io/badge/-Python-3C78A9?style=flat-square&logo=python&logoColor=ffffff)
 ![Vue](https://img.shields.io/badge/-Vue-%23E44D27?style=flat-square&logo=html5&logoColor=ffffff)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-%23F7DF1C?style=flat-square&logo=javascript&logoColor=000000&labelColor=%23F7DF1C&color=%23FFCE5A)
