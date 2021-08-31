@@ -7,6 +7,9 @@ Hi, I'm Payne, a passionate self-taught developer from Xian, China.
 - 💬 How to contact with: qinyuanpei@163.com
 - 👯 How to share thoughts: https://blog.yuanpei.me
 
+# My Tech Stack
+
+
 **Languages & Tools:**  
 C#、Python、JavaScript
 
