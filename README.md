@@ -1,11 +1,11 @@
 ### Hi , I'm [Payne!](https://blog.yuanpei.me) <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">
 
-A developer from China.
+Hi, I'm Payne, a passionate self-taught developer from Xian, China. 
 
-- 🔭 I’m currently working on Xi'an, China
-- 🌱 I’m currently learning  MicroService, Architecture, Data Analyse, .NET Core, Python .etc.
-- 👯 How to share ideas and thoughts with: https://blog.yuanpei.me
+- 🔭 I’m currently working on personal project.
+- 🌱 I’m currently learning  C#、.NET、Python & JavaScript
 - 💬 How to contact with: qinyuanpei@163.com
+- 👯 How to share thoughts: https://blog.yuanpei.me
 
 **Languages & Tools:**  
 C#、Python、JavaScript
