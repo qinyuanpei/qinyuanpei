@@ -39,7 +39,7 @@ BLOG_URL_PREFIX = 'https://blog.yuanpei.me'
 RECENT_POSTS_URL = 'https://blog.yuanpei.me/content.json'
 
 def formatPost(item):
-    itemTpl = '* {0} - [{1}]({2})\n'
+    itemTpl = '* {0} - [{1}]({2})'
     return itemTpl.format(
         datetime.datetime.strftime(item.getDate(),'%Y-%m-%d'),
         item.getTitle(),
@@ -51,6 +51,6 @@ with open('./README.md', 'wt', encoding='utf-8') as fw:
       posts = sorted(loadPosts(),key=lambda x:x.getDate(),reverse=True)
       recent_posts = ''
       if len(posts) > 0:
-         recent_posts = ''.join(list(map(lambda x: formatPost(x), posts[:7])))
+         recent_posts = '\n'.join(list(map(lambda x: formatPost(x), posts[:7])))
       content = fr.read().replace(TO_REPLACE_TAG, recent_posts)
       fw.write(content)

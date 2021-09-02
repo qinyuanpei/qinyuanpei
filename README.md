@@ -27,8 +27,4 @@ Hi, I'm Payne, a passionate self-taught developer from Xian, China.
 * 2021-08-04 - [再话AOP，从简化缓存操作说起](https://blog.yuanpei.me/posts/2126762870/)
 * 2021-08-02 - [洗衣随想曲](https://blog.yuanpei.me/posts/3938682696/)
 * 2021-07-25 - [ASP.NET Core 搭载 Envoy 实现微服务身份认证(JWT)](https://blog.yuanpei.me/posts/731808750/)
-* 2021-07-12 - [浪客剑心：一曲幕末时代的挽歌](https://blog.yuanpei.me/posts/673523131/)
-* 2021-07-10 - [ASP.NET Core 搭载 Envoy 实现微服务的监控预警](https://blog.yuanpei.me/posts/1519021197/)
-* 2021-07-05 - [ASP.NET Core 搭载 Envoy 实现微服务的负载均衡](https://blog.yuanpei.me/posts/3599307336/)
-
 * [More...](https://blog.yuanpei.me/)
