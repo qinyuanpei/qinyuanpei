@@ -34,7 +34,8 @@ def loadPosts():
         return []
 
 # 常量定义
-TO_REPLACE_TAG = '{{Recent Posts}}'
+TO_REPLACE_POSTS = '{{Recent Posts}}'
+TO_REPLACE_DATE = '{{Generated At}}'
 BLOG_URL_PREFIX = 'https://blog.yuanpei.me'
 RECENT_POSTS_URL = 'https://blog.yuanpei.me/content.json'
 
@@ -52,5 +53,8 @@ with open('./README.md', 'wt', encoding='utf-8') as fw:
       recent_posts = ''
       if len(posts) > 0:
          recent_posts = '\n'.join(list(map(lambda x: formatPost(x), posts[:7])))
-      content = fr.read().replace(TO_REPLACE_TAG, recent_posts)
+      content = fr.read().replace(TO_REPLACE_POSTS, recent_posts)
+      createdAt = datetime.datetime.now()
+      createdAt = datetime.datetime.strftime(createdAt,'%Y-%m-%d %H:%M:%S')
+      content = content.replace(TO_REPLACE_DATE, createdAt)
       fw.write(content)
