@@ -1,5 +1,6 @@
 import re
 import json
+import pytz
 import datetime
 import requests
 
@@ -39,6 +40,9 @@ TO_REPLACE_DATE = '{{Generated At}}'
 BLOG_URL_PREFIX = 'https://blog.yuanpei.me'
 RECENT_POSTS_URL = 'https://blog.yuanpei.me/content.json'
 
+# 时区定义
+tz = pytz.timezone('Asia/Shanghai')
+
 def formatPost(item):
     itemTpl = '* {0} - [{1}]({2})'
     return itemTpl.format(
@@ -54,7 +58,7 @@ with open('./README.md', 'wt', encoding='utf-8') as fw:
       if len(posts) > 0:
          recent_posts = '\n'.join(list(map(lambda x: formatPost(x), posts[:7])))
       content = fr.read().replace(TO_REPLACE_POSTS, recent_posts)
-      createdAt = datetime.datetime.now()
+      createdAt = datetime.datetime.now(tz)
       createdAt = datetime.datetime.strftime(createdAt,'%Y-%m-%d %H:%M:%S')
       content = content.replace(TO_REPLACE_DATE, createdAt)
       fw.write(content)
