@@ -1,4 +1,4 @@
-### Hi , I'm [Payne!](https://blog.yuanpei.me) <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">
+﻿### Hi , I'm [Payne!](https://blog.yuanpei.me) <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">
 
 Hi, I'm Payne, a passionate self-taught developer from Xian, China. 
 
@@ -14,6 +14,13 @@ Hi, I'm Payne, a passionate self-taught developer from Xian, China.
 ![Python](http://img.shields.io/badge/-Python-3C78A9?style=flat-square&logo=python&logoColor=ffffff)
 ![Vue](https://img.shields.io/badge/-Vue-%23E44D27?style=flat-square&logo=html5&logoColor=ffffff)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-%23F7DF1C?style=flat-square&logo=javascript&logoColor=000000&labelColor=%23F7DF1C&color=%23FFCE5A)
+
+[![](https://img.shields.io/badge/Editor-Visual%20Studio%20Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=ffffff)](https://code.visualstudio.com/)
+[![](https://img.shields.io/badge/-Markdown-black?style=flat-square&logo=markdown&logoColor=ffffff)](https://www.markdownguide.org/)
+[![](https://img.shields.io/badge/-GitHub%20Actions-2088FF?style=flat-square&logo=github-actions&logoColor=ffffff)](https://github.com/features/actions)
+[![](https://img.shields.io/badge/-PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=ffffff)](https://www.postgresql.org/)
+[![](https://img.shields.io/badge/-Elastic%20Stack-005571?style=flat-square&logo=elastic-stack&logoColor=ffffff)](https://www.elastic.co/)
+[![](https://img.shields.io/badge/-Linux-Fcc624?style=flat-square&logo=linux&logoColor=ffffff)](https://www.linux.org/)
 
 ## Github Stats:
 
