@@ -3,6 +3,7 @@ import json
 import pytz
 import datetime
 import requests
+from rss_parser import Parser
 
 # 文档实体结构定义
 class Post:
@@ -17,7 +18,10 @@ class Post:
         return self.title
 
     def getLink(self):
-        return self.prefix + '/' + self.link
+        if self.prefix == '' or self.prefix == None:
+           return self.link
+        else:
+            return self.prefix + '/' + self.link
 
     def getDate(self):
         d = re.findall(r'\d{4}-\d{1,2}-\d{1,2}',self.date)[0]
@@ -34,11 +38,31 @@ def loadPosts():
     else:
         return []
 
+def loadPostsByRSS():
+    response = requests.get(POSTS_RSS_URL)
+    if response.status_code == 200:
+        parser = Parser(xml =response.content, limit=RECENT_POST_LIMIT)
+        feed = parser.parse()
+        for item in feed.feed:
+            publish_date = datetime.datetime.strptime(item.publish_date, '%a, %d %b %Y %H:%M:%S +0000')
+            publish_date = datetime.datetime.strftime(publish_date,'%Y-%m-%d %H:%M:%S')
+            yield Post(publish_date,item.link,item.title, None)
+    else:
+        return []
+
+
+
 # 常量定义
+POSTS_RSS_URL = 'https://blog.yuanpei.me/index.xml'
+
 TO_REPLACE_POSTS = '{{Recent Posts}}'
 TO_REPLACE_DATE = '{{Generated At}}'
+
 BLOG_URL_PREFIX = 'https://blog.yuanpei.me'
 RECENT_POSTS_URL = 'https://blog.yuanpei.me/content.json'
+
+RECENT_POST_LIMIT = 10
+
 
 # 时区定义
 tz = pytz.timezone('Asia/Shanghai')
@@ -53,10 +77,10 @@ def formatPost(item):
 
 with open('./README.md', 'wt', encoding='utf-8') as fw:
     with open('./.template/README.md', 'rt', encoding='utf-8') as fr:
-      posts = sorted(loadPosts(),key=lambda x:x.getDate(),reverse=True)
+      posts = sorted(loadPostsByRSS(), key=lambda x:x.getDate(),reverse=True)
       recent_posts = ''
       if len(posts) > 0:
-         recent_posts = '\n'.join(list(map(lambda x: formatPost(x), posts[:7])))
+         recent_posts = '\n'.join(list(map(lambda x: formatPost(x), posts[:RECENT_POST_LIMIT])))
       content = fr.read().replace(TO_REPLACE_POSTS, recent_posts)
       createdAt = datetime.datetime.now(tz)
       createdAt = datetime.datetime.strftime(createdAt,'%Y-%m-%d %H:%M:%S')
