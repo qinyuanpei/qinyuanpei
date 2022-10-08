@@ -24,7 +24,7 @@ Hi, I'm Payne, a passionate self-taught developer from Xian, China.
 
 ## Github Stats:
 
-![Payne's Github Stats](https://github-readme-stats.vercel.app/api?username=qinyuanpei&show_icons=true)
+![Payne's Github Stats](https://github-readme-stats.vercel.app/api?username=qinyuanpei&show_icons=true&theme=dark)
 
 ## Recent Posts:
 * 2022-09-15 - [.NET 进程内队列 Channel 的入门与应用](https://blog.yuanpei.me/posts/getting-started-with-the-.net-in-process-queue-channel/)
