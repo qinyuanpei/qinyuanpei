@@ -24,7 +24,7 @@ Hi, I'm Payne, a passionate self-taught developer from Xian, China.
 
 ## Github Stats:
 
-![Payne's Github Stats](https://github-readme-stats.vercel.app/api?username=qinyuanpei&show_icons=true)
+![Payne's Github Stats](https://github-readme-stats.vercel.app/api?username=qinyuanpei&show_icons=true&theme=dark)
 
 ## Recent Posts:
 {{Recent Posts}}
