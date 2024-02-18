@@ -3,7 +3,7 @@ import json
 import pytz
 import datetime
 import requests
-from rss_parser import Parser
+import feedparser
 
 # 文档实体结构定义
 class Post:
@@ -39,18 +39,11 @@ def loadPosts():
         return []
 
 def loadPostsByRSS():
-    response = requests.get(POSTS_RSS_URL)
-    if response.status_code == 200:
-        parser = Parser(xml =response.content, limit=RECENT_POST_LIMIT)
-        feed = parser.parse()
-        for item in feed.feed:
-            publish_date = datetime.datetime.strptime(item.publish_date, '%a, %d %b %Y %H:%M:%S +0000')
-            publish_date = datetime.datetime.strftime(publish_date,'%Y-%m-%d %H:%M:%S')
-            yield Post(publish_date,item.link,item.title, None)
-    else:
-        return []
-
-
+    feed = feedparser.parse(POSTS_RSS_URL)
+    for item in feed.entries:
+        publish_date = datetime.datetime.strptime(item.published, '%a, %d %b %Y %H:%M:%S +0000')
+        publish_date = datetime.datetime.strftime(publish_date,'%Y-%m-%d %H:%M:%S')
+        yield Post(publish_date, item.link, item.title, None)
 
 # 常量定义
 POSTS_RSS_URL = 'https://blog.yuanpei.me/index.xml'
