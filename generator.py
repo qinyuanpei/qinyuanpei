@@ -24,10 +24,7 @@ class Post:
             return self.prefix + '/' + self.link
 
     def getDate(self):
-        d = re.findall(r'\d{4}-\d{1,2}-\d{1,2}',self.date)[0]
-        t = re.findall(r'\d{2}:\d{2}:\d{2}',self.date)[0]
-        dt = '%s %s' % (d,t)
-        return datetime.datetime.strptime(dt,'%Y-%m-%d %H:%M:%S')
+        return datetime.datetime.strptime(self.date,'%Y-%m-%d %H:%M:%S')
 
 def loadPosts():
     response = requests.get(RECENT_POSTS_URL)
