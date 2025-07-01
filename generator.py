@@ -41,6 +41,8 @@ def loadPosts():
 def loadPostsByRSS():
     feed = feedparser.parse(POSTS_RSS_URL)
     for item in feed.entries:
+        if '/posts/' not in item.link:
+            continue
         publish_date = datetime.datetime.strptime(item.published, '%a, %d %b %Y %H:%M:%S +0000')
         publish_date = datetime.datetime.strftime(publish_date,'%Y-%m-%d %H:%M:%S')
         yield Post(publish_date, item.link, item.title, None)
